@@ -2,6 +2,7 @@
 
 [ext_resource type="SpriteFrames" uid="uid://bmnnqb5d5eejs" path="res://art/player_sprite.tres" id="1_3vyb7"]
 [ext_resource type="Script" uid="uid://3mcgdlgcr3su" path="res://scripts/player.gd" id="1_g2els"]
+[ext_resource type="Script" uid="uid://b7a1va7x6kykq" path="res://scripts/mask_menu.gd" id="3_qhqgy"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_u8vuu"]
 size = Vector2(16, 26)
@@ -16,6 +17,57 @@ shape = SubResource("RectangleShape2D_u8vuu")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=506383766]
 position = Vector2(0, -3)
 sprite_frames = ExtResource("1_3vyb7")
-animation = &"down"
+animation = &"human_down"
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=861688044]
+
+[node name="MaskMenu" type="VBoxContainer" parent="." unique_id=1490406067]
+process_mode = 2
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -256.0
+offset_top = -144.0
+offset_right = 256.0
+offset_bottom = 144.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+script = ExtResource("3_qhqgy")
+
+[node name="Label" type="Label" parent="MaskMenu" unique_id=539112249]
+layout_mode = 2
+text = "Masks"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="GridContainer" type="GridContainer" parent="MaskMenu" unique_id=1328660204]
+layout_mode = 2
+size_flags_horizontal = 4
+columns = 2
+
+[node name="Humanoid" type="Button" parent="MaskMenu/GridContainer" unique_id=100383884]
+layout_mode = 2
+text = "Humanoid"
+
+[node name="Horse" type="Button" parent="MaskMenu/GridContainer" unique_id=1990096865]
+layout_mode = 2
+text = "Horse
+"
+
+[node name="Bird" type="Button" parent="MaskMenu/GridContainer" unique_id=1200863349]
+layout_mode = 2
+disabled = true
+text = "Bird"
+
+[node name="Jotun" type="Button" parent="MaskMenu/GridContainer" unique_id=735881513]
+layout_mode = 2
+text = "Jotun"
+
+[connection signal="pressed" from="MaskMenu/GridContainer/Humanoid" to="MaskMenu" method="_on_humanoid_pressed"]
+[connection signal="pressed" from="MaskMenu/GridContainer/Horse" to="MaskMenu" method="_on_horse_pressed"]
+[connection signal="pressed" from="MaskMenu/GridContainer/Bird" to="MaskMenu" method="_on_bird_pressed"]
+[connection signal="pressed" from="MaskMenu/GridContainer/Jotun" to="MaskMenu" method="_on_jotun_pressed"]
