@@ -5,6 +5,11 @@ extends VBoxContainer
 @onready var loki_music = $"../LokiMusic"
 @onready var horse_music = $"../HorseMusic"
 
+func _ready() -> void:
+	$GridContainer/Horse.disabled = !global.has_horse
+	$GridContainer/Bird.disabled = !global.has_bird
+	$GridContainer/Jotun.disabled = !global.has_guard
+
 func _on_humanoid_pressed() -> void:
 	set_form("human", loki_music)
 	close()

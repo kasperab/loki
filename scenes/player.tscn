@@ -62,7 +62,6 @@ text = "Horse
 
 [node name="Bird" type="Button" parent="MaskMenu/GridContainer" unique_id=1200863349]
 layout_mode = 2
-disabled = true
 text = "Bird"
 
 [node name="Jotun" type="Button" parent="MaskMenu/GridContainer" unique_id=735881513]

@@ -1,0 +1,54 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://vwe1pr05t4b0"]
+
+[ext_resource type="Texture2D" uid="uid://b4dwm5qxo5aua" path="res://art/02_characters_horse.png" id="1_dxjp3"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ljkh2"]
+atlas = ExtResource("1_dxjp3")
+region = Rect2(128, 112, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_klpli"]
+atlas = ExtResource("1_dxjp3")
+region = Rect2(96, 112, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vjf5q"]
+atlas = ExtResource("1_dxjp3")
+region = Rect2(144, 112, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lrqs4"]
+atlas = ExtResource("1_dxjp3")
+region = Rect2(128, 80, 16, 32)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ljkh2")
+}],
+"loop": true,
+"name": &"down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_klpli")
+}],
+"loop": true,
+"name": &"left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vjf5q")
+}],
+"loop": true,
+"name": &"right",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lrqs4")
+}],
+"loop": true,
+"name": &"up",
+"speed": 5.0
+}]

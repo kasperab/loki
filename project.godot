@@ -17,6 +17,10 @@ config/features=PackedStringArray("4.6")
 
 buses/default_bus_layout="uid://cqge3egcx756m"
 
+[autoload]
+
+global="*uid://4sjo20r8s1a0"
+
 [display]
 
 window/size/viewport_width=512

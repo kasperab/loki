@@ -1,4 +1,5 @@
 extends CharacterBody2D
+class_name Player
 
 @export var speed = 32.0
 @onready var sprite = $AnimatedSprite2D
@@ -31,3 +32,6 @@ func _process(_delta: float) -> void:
 		sprite.animation = form + "_left"
 	elif velocity.x > 0:
 		sprite.animation = form + "_right"
+
+func update_masks() -> void:
+	mask_menu._ready()
