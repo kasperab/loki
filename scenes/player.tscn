@@ -88,15 +88,18 @@ text = "Humanoid"
 
 [node name="Horse" type="Button" parent="MaskMenu/GridContainer" unique_id=1990096865]
 layout_mode = 2
+theme_override_colors/font_disabled_color = Color(1, 1, 1, 0)
 text = "Horse
 "
 
 [node name="Bird" type="Button" parent="MaskMenu/GridContainer" unique_id=1200863349]
 layout_mode = 2
+theme_override_colors/font_disabled_color = Color(1, 1, 1, 0)
 text = "Bird"
 
 [node name="Jotun" type="Button" parent="MaskMenu/GridContainer" unique_id=735881513]
 layout_mode = 2
+theme_override_colors/font_disabled_color = Color(1, 1, 1, 0)
 text = "Jotun"
 
 [node name="LokiMusic" type="AudioStreamPlayer" parent="." unique_id=120207228]

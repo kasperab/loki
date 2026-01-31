@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bmee776nd7b3g"]
+
+[ext_resource type="Script" uid="uid://cdpw2tdpkoxbg" path="res://scripts/heimdall1.gd" id="1_ee5sx"]
+[ext_resource type="SpriteFrames" uid="uid://clqxr2k40i3j7" path="res://art/heimdall_sprite.tres" id="1_uh75u"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ee5sx"]
+size = Vector2(16, 30)
+
+[node name="Heimdall1" type="StaticBody2D" unique_id=1322154677]
+script = ExtResource("1_ee5sx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1670040435]
+shape = SubResource("RectangleShape2D_ee5sx")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2069861440]
+position = Vector2(0, -1)
+sprite_frames = ExtResource("1_uh75u")
+animation = &"down"
