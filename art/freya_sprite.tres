@@ -1,0 +1,54 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://dt5nb0attb5bk"]
+
+[ext_resource type="Texture2D" uid="uid://cdiwm8n5im72j" path="res://art/02_characters_freya.png" id="1_w1shv"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3yxa6"]
+atlas = ExtResource("1_w1shv")
+region = Rect2(128, 112, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gmrx8"]
+atlas = ExtResource("1_w1shv")
+region = Rect2(112, 112, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_57l7a"]
+atlas = ExtResource("1_w1shv")
+region = Rect2(144, 112, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3t5rw"]
+atlas = ExtResource("1_w1shv")
+region = Rect2(128, 80, 16, 32)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3yxa6")
+}],
+"loop": true,
+"name": &"down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gmrx8")
+}],
+"loop": true,
+"name": &"left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_57l7a")
+}],
+"loop": true,
+"name": &"right",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3t5rw")
+}],
+"loop": true,
+"name": &"up",
+"speed": 5.0
+}]
