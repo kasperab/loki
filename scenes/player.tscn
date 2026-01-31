@@ -2,11 +2,15 @@
 
 [ext_resource type="SpriteFrames" uid="uid://bmnnqb5d5eejs" path="res://art/player_sprite.tres" id="1_3vyb7"]
 [ext_resource type="Script" uid="uid://3mcgdlgcr3su" path="res://scripts/player.gd" id="1_g2els"]
+[ext_resource type="Script" uid="uid://cucayldjgb4ng" path="res://scripts/dialogue.gd" id="3_d2wvv"]
 [ext_resource type="Script" uid="uid://b7a1va7x6kykq" path="res://scripts/mask_menu.gd" id="3_qhqgy"]
 [ext_resource type="AudioStream" uid="uid://b36dkxvxvrraj" path="res://audio/music/LOKE Loop.mp3" id="4_dqkch"]
 [ext_resource type="AudioStream" uid="uid://deej35agcvj2k" path="res://audio/music/HORSE Loop.mp3" id="5_qlg0r"]
 [ext_resource type="Script" uid="uid://c1gojr47gwi8p" path="res://scripts/pause.gd" id="6_fjrip"]
+[ext_resource type="AudioStream" uid="uid://cwcvg34yqxq65" path="res://audio/sfx/Footstep SFX.wav" id="6_smehm"]
 [ext_resource type="PackedScene" uid="uid://ckeqfs4ao5qvd" path="res://scenes/settings.tscn" id="6_tuyoq"]
+[ext_resource type="AudioStream" uid="uid://4yy83io38kpd" path="res://audio/music/FREJA Loop.mp3" id="6_ur7pv"]
+[ext_resource type="AudioStream" uid="uid://p17tcjjptixe" path="res://audio/music/Jätten Loop.mp3" id="7_y4r1p"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_u8vuu"]
 size = Vector2(16, 26)
@@ -24,6 +28,27 @@ sprite_frames = ExtResource("1_3vyb7")
 animation = &"human_down"
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=861688044]
+
+[node name="Dialogue" type="Panel" parent="." unique_id=1428487342]
+visible = false
+self_modulate = Color(0, 0, 0, 1)
+offset_left = -256.0
+offset_top = 80.0
+offset_right = 256.0
+offset_bottom = 144.0
+script = ExtResource("3_d2wvv")
+
+[node name="Label" type="Label" parent="Dialogue" unique_id=1182903427]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 16.0
+offset_top = 8.0
+offset_right = -16.0
+offset_bottom = -8.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="MaskMenu" type="VBoxContainer" parent="." unique_id=1490406067]
 process_mode = 2
@@ -82,6 +107,22 @@ stream = ExtResource("5_qlg0r")
 volume_db = -80.0
 autoplay = true
 bus = &"Music"
+
+[node name="BirdMusic" type="AudioStreamPlayer" parent="." unique_id=711272674]
+stream = ExtResource("6_ur7pv")
+volume_db = -80.0
+autoplay = true
+bus = &"Music"
+
+[node name="GuardMusic" type="AudioStreamPlayer" parent="." unique_id=1469831266]
+stream = ExtResource("7_y4r1p")
+volume_db = -80.0
+autoplay = true
+bus = &"Music"
+
+[node name="Footstep" type="AudioStreamPlayer" parent="." unique_id=159932309]
+stream = ExtResource("6_smehm")
+bus = &"SFX"
 
 [node name="Pause" type="Control" parent="." unique_id=1646923132]
 process_mode = 2
