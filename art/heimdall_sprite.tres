@@ -1,0 +1,54 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://clqxr2k40i3j7"]
+
+[ext_resource type="Texture2D" uid="uid://bbrlv1bus565c" path="res://art/Heimdall.png" id="1_ivuou"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nof07"]
+atlas = ExtResource("1_ivuou")
+region = Rect2(0, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bythn"]
+atlas = ExtResource("1_ivuou")
+region = Rect2(16, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_78516"]
+atlas = ExtResource("1_ivuou")
+region = Rect2(0, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x54dg"]
+atlas = ExtResource("1_ivuou")
+region = Rect2(16, 32, 16, 32)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nof07")
+}],
+"loop": true,
+"name": &"down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bythn")
+}],
+"loop": true,
+"name": &"left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_78516")
+}],
+"loop": true,
+"name": &"right",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x54dg")
+}],
+"loop": true,
+"name": &"up",
+"speed": 5.0
+}]

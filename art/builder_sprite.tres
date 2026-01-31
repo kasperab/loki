@@ -1,0 +1,54 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://bdwo58qrstce4"]
+
+[ext_resource type="Texture2D" uid="uid://dokixg2b62puu" path="res://art/Jatten.png" id="1_ameal"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cr7wc"]
+atlas = ExtResource("1_ameal")
+region = Rect2(0, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d8chx"]
+atlas = ExtResource("1_ameal")
+region = Rect2(0, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jqvof"]
+atlas = ExtResource("1_ameal")
+region = Rect2(16, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_glyma"]
+atlas = ExtResource("1_ameal")
+region = Rect2(16, 0, 16, 32)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cr7wc")
+}],
+"loop": true,
+"name": &"down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d8chx")
+}],
+"loop": true,
+"name": &"left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jqvof")
+}],
+"loop": true,
+"name": &"right",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_glyma")
+}],
+"loop": true,
+"name": &"up",
+"speed": 5.0
+}]

@@ -1,0 +1,18 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://b1jl631fx8qu3"]
+
+[ext_resource type="Texture2D" uid="uid://tm7petibid2w" path="res://art/02_characters_Thor.png" id="1_x6mik"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i2jrl"]
+atlas = ExtResource("1_x6mik")
+region = Rect2(128, 112, 16, 32)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i2jrl")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
