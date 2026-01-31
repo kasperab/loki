@@ -6,8 +6,12 @@ class_name Player
 @onready var mask_menu = $MaskMenu
 @onready var first_mask = $MaskMenu/GridContainer/Humanoid
 var form = "human"
+@onready var pause = $Pause
 
 func _process(_delta: float) -> void:
+	if Input.is_action_just_pressed("pause"):
+		pause.show()
+		get_tree().paused = true
 	if Input.is_action_just_pressed("mask_menu"):
 		mask_menu.show()
 		first_mask.grab_focus()
