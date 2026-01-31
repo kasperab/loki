@@ -1,8 +1,20 @@
 [gd_resource type="SpriteFrames" format=3 uid="uid://bmnnqb5d5eejs"]
 
-[ext_resource type="Texture2D" uid="uid://ddfkmpbvbgbjo" path="res://art/01.png" id="1_tt7tm"]
+[ext_resource type="Texture2D" uid="uid://ccy2rmnsgj7q2" path="res://art/02_characters_loki.png" id="1_tt7tm"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_es1ro"]
+atlas = ExtResource("1_tt7tm")
+region = Rect2(128, 112, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p05ks"]
+atlas = ExtResource("1_tt7tm")
+region = Rect2(112, 112, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uxmc8"]
+atlas = ExtResource("1_tt7tm")
+region = Rect2(144, 112, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_miw02"]
 atlas = ExtResource("1_tt7tm")
 region = Rect2(128, 80, 16, 32)
 
@@ -13,6 +25,30 @@ animations = [{
 "texture": SubResource("AtlasTexture_es1ro")
 }],
 "loop": true,
-"name": &"default",
+"name": &"down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p05ks")
+}],
+"loop": true,
+"name": &"left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uxmc8")
+}],
+"loop": true,
+"name": &"right",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_miw02")
+}],
+"loop": true,
+"name": &"up",
 "speed": 5.0
 }]
