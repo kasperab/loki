@@ -2,7 +2,24 @@
 
 [ext_resource type="Texture2D" uid="uid://ool0ji8mrj2d" path="res://art/02_characters_guard.png" id="1_p05ks"]
 [ext_resource type="Texture2D" uid="uid://ccy2rmnsgj7q2" path="res://art/02_characters_loki.png" id="1_tt7tm"]
+[ext_resource type="Texture2D" uid="uid://cjnwrdk1nemq8" path="res://art/Frejas_fagel.png" id="1_uxmc8"]
 [ext_resource type="Texture2D" uid="uid://b4dwm5qxo5aua" path="res://art/02_characters_horse.png" id="2_es1ro"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7voic"]
+atlas = ExtResource("1_uxmc8")
+region = Rect2(0, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b646r"]
+atlas = ExtResource("1_uxmc8")
+region = Rect2(16, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6fenk"]
+atlas = ExtResource("1_uxmc8")
+region = Rect2(16, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oofqh"]
+atlas = ExtResource("1_uxmc8")
+region = Rect2(0, 0, 16, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_j13fy"]
 atlas = ExtResource("1_p05ks")
@@ -54,6 +71,38 @@ region = Rect2(128, 80, 16, 32)
 
 [resource]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7voic")
+}],
+"loop": true,
+"name": &"bird_down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b646r")
+}],
+"loop": true,
+"name": &"bird_left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6fenk")
+}],
+"loop": true,
+"name": &"bird_right",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oofqh")
+}],
+"loop": true,
+"name": &"bird_up",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_j13fy")
