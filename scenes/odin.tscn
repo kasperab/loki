@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://cufpeinji8eq6"]
+
+[ext_resource type="Script" uid="uid://ce373gyec7s8m" path="res://scripts/odin.gd" id="1_lnvjs"]
+[ext_resource type="SpriteFrames" uid="uid://dn7kkge4fvmli" path="res://art/odin_sprite.tres" id="1_w110c"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lnvjs"]
+size = Vector2(16, 26)
+
+[node name="Odin" type="StaticBody2D" unique_id=1774580775]
+script = ExtResource("1_lnvjs")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2069286027]
+shape = SubResource("RectangleShape2D_lnvjs")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1494019301]
+position = Vector2(0, 1)
+sprite_frames = ExtResource("1_w110c")
+animation = &"down"

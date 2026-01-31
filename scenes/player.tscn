@@ -15,6 +15,9 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_u8vuu"]
 size = Vector2(16, 26)
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d2wvv"]
+bg_color = Color(0, 0, 0, 1)
+
 [node name="Player" type="CharacterBody2D" unique_id=155016044]
 motion_mode = 1
 script = ExtResource("1_g2els")
@@ -31,11 +34,11 @@ animation = &"human_down"
 
 [node name="Dialogue" type="Panel" parent="." unique_id=1428487342]
 visible = false
-self_modulate = Color(0, 0, 0, 1)
 offset_left = -256.0
 offset_top = 80.0
 offset_right = 256.0
 offset_bottom = 144.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_d2wvv")
 script = ExtResource("3_d2wvv")
 
 [node name="Label" type="Label" parent="Dialogue" unique_id=1182903427]
@@ -49,6 +52,7 @@ offset_right = -16.0
 offset_bottom = -8.0
 grow_horizontal = 2
 grow_vertical = 2
+autowrap_mode = 2
 
 [node name="MaskMenu" type="VBoxContainer" parent="." unique_id=1490406067]
 process_mode = 2

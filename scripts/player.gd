@@ -10,7 +10,7 @@ var form = "human"
 @export var step_time = 1.0
 var step_countdown = 0.0
 @onready var footstep = $Footstep
-@onready var dialogue = $Dialogue
+@onready var dialogue: Dialogue = $Dialogue
 
 func _ready() -> void:
 	global.player = self

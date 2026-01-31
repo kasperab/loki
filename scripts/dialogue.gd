@@ -1,4 +1,5 @@
 extends Panel
+class_name Dialogue
 
 @onready var label = $Label
 var dialogue: Array
@@ -12,7 +13,11 @@ func _process(_delta: float) -> void:
 		else:
 			hide()
 
-func start(new_dialogue: Array) -> void:
+func start(new_dialogue: Array, is_mask = false) -> void:
 	dialogue = new_dialogue
-	index = -1
+	if is_mask:
+		index = 0
+		label.text = dialogue[index]
+	else:
+		index = -1
 	show()
