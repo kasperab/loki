@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://cx0vakv70gp7j"]
+
+[ext_resource type="SpriteFrames" uid="uid://dt5nb0attb5bk" path="res://art/freya_sprite.tres" id="1_jnawg"]
+[ext_resource type="Script" uid="uid://dwm2ebv5n8a1o" path="res://scripts/freya.gd" id="1_to0s5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_to0s5"]
+size = Vector2(16, 26)
+
+[node name="Freya" type="StaticBody2D" unique_id=758420821]
+script = ExtResource("1_to0s5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1986618889]
+shape = SubResource("RectangleShape2D_to0s5")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1982973812]
+position = Vector2(0, -3)
+sprite_frames = ExtResource("1_jnawg")
+animation = &"down"

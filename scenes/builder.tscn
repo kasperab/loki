@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://do8n83rh6gq3m"]
+
+[ext_resource type="SpriteFrames" uid="uid://bdwo58qrstce4" path="res://art/builder_sprite.tres" id="1_80mxy"]
+[ext_resource type="Script" uid="uid://cvhbqnsb0c6pf" path="res://scripts/builder.gd" id="1_glllh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pewu3"]
+size = Vector2(16, 32)
+
+[node name="Builder" type="StaticBody2D" unique_id=753837617]
+script = ExtResource("1_glllh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2005164001]
+shape = SubResource("RectangleShape2D_pewu3")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1491327089]
+sprite_frames = ExtResource("1_80mxy")
+animation = &"down"
