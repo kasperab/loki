@@ -4,6 +4,8 @@ extends VBoxContainer
 @onready var sprite = $"../AnimatedSprite2D"
 @onready var loki_music = $"../LokiMusic"
 @onready var horse_music = $"../HorseMusic"
+@onready var bird_music = $"../BirdMusic"
+@onready var guard_music = $"../GuardMusic"
 @onready var pause = $"../Pause"
 
 func _ready() -> void:
@@ -20,11 +22,11 @@ func _on_horse_pressed() -> void:
 	close()
 
 func _on_bird_pressed() -> void:
-	set_form("bird", loki_music)
+	set_form("bird", bird_music)
 	close()
 
 func _on_jotun_pressed() -> void:
-	set_form("guard", loki_music)
+	set_form("guard", guard_music)
 	close()
 
 func set_form(form: String, music: AudioStreamPlayer) -> void:

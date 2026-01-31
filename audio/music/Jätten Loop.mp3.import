@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://p17tcjjptixe"
+path="res://.godot/imported/Jätten Loop.mp3-7243907e503746812495d1cd81ef937f.mp3str"
+
+[deps]
+
+source_file="res://audio/music/Jätten Loop.mp3"
+dest_files=["res://.godot/imported/Jätten Loop.mp3-7243907e503746812495d1cd81ef937f.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
