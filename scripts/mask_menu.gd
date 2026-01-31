@@ -4,6 +4,7 @@ extends VBoxContainer
 @onready var sprite = $"../AnimatedSprite2D"
 @onready var loki_music = $"../LokiMusic"
 @onready var horse_music = $"../HorseMusic"
+@onready var pause = $"../Pause"
 
 func _ready() -> void:
 	$GridContainer/Horse.disabled = !global.has_horse
@@ -36,3 +37,8 @@ func set_form(form: String, music: AudioStreamPlayer) -> void:
 func close() -> void:
 	hide()
 	get_tree().paused = false
+
+func _process(_delta: float) -> void:
+	if Input.is_action_just_pressed("pause"):
+		hide()
+		pause.show()
