@@ -3,6 +3,8 @@
 [ext_resource type="SpriteFrames" uid="uid://bmnnqb5d5eejs" path="res://art/player_sprite.tres" id="1_3vyb7"]
 [ext_resource type="Script" uid="uid://3mcgdlgcr3su" path="res://scripts/player.gd" id="1_g2els"]
 [ext_resource type="Script" uid="uid://b7a1va7x6kykq" path="res://scripts/mask_menu.gd" id="3_qhqgy"]
+[ext_resource type="AudioStream" uid="uid://b36dkxvxvrraj" path="res://audio/music/LOKE Loop.mp3" id="4_dqkch"]
+[ext_resource type="AudioStream" uid="uid://deej35agcvj2k" path="res://audio/music/HORSE Loop.mp3" id="5_qlg0r"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_u8vuu"]
 size = Vector2(16, 26)
@@ -66,6 +68,19 @@ text = "Bird"
 [node name="Jotun" type="Button" parent="MaskMenu/GridContainer" unique_id=735881513]
 layout_mode = 2
 text = "Jotun"
+
+[node name="LokiMusic" type="AudioStreamPlayer" parent="." unique_id=120207228]
+process_mode = 3
+stream = ExtResource("4_dqkch")
+autoplay = true
+bus = &"Music"
+
+[node name="HorseMusic" type="AudioStreamPlayer" parent="." unique_id=976099433]
+process_mode = 3
+stream = ExtResource("5_qlg0r")
+volume_db = -80.0
+autoplay = true
+bus = &"Music"
 
 [connection signal="pressed" from="MaskMenu/GridContainer/Humanoid" to="MaskMenu" method="_on_humanoid_pressed"]
 [connection signal="pressed" from="MaskMenu/GridContainer/Horse" to="MaskMenu" method="_on_horse_pressed"]

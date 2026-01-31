@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://4yy83io38kpd"
+path="res://.godot/imported/FREJA Loop.mp3-e8a3184bc88197d8c88099ca14ec6dfb.mp3str"
+
+[deps]
+
+source_file="res://audio/music/FREJA Loop.mp3"
+dest_files=["res://.godot/imported/FREJA Loop.mp3-e8a3184bc88197d8c88099ca14ec6dfb.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

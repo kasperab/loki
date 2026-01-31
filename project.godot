@@ -13,6 +13,10 @@ config_version=5
 run/main_scene="uid://c160jyiuk5eea"
 config/features=PackedStringArray("4.6")
 
+[audio]
+
+buses/default_bus_layout="uid://cqge3egcx756m"
+
 [display]
 
 window/size/viewport_width=512
