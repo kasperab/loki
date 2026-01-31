@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://buvdeffdrh8dv"]
+
+[ext_resource type="PackedScene" uid="uid://d3m2anyg2ljba" path="res://scenes/asgard.tscn" id="1_astfa"]
+
+[node name="Asgard2" type="Node2D" unique_id=1572441955]
+
+[node name="Asgard" parent="." unique_id=642551723 instance=ExtResource("1_astfa")]

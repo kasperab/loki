@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://injibnvafkvt"]
+
+[ext_resource type="PackedScene" uid="uid://ds4gvcdaugik3" path="res://scenes/road.tscn" id="1_b43cn"]
+[ext_resource type="PackedScene" uid="uid://cxa3sqvykgcp8" path="res://scenes/player.tscn" id="2_8f23h"]
+
+[node name="Road1" type="Node2D" unique_id=580523758]
+
+[node name="Road" parent="." unique_id=1045175530 instance=ExtResource("1_b43cn")]
+
+[node name="Player" parent="." unique_id=155016044 instance=ExtResource("2_8f23h")]
+position = Vector2(-638, -74)
