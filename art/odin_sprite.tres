@@ -1,0 +1,54 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://dn7kkge4fvmli"]
+
+[ext_resource type="Texture2D" uid="uid://cmykpvcn58msg" path="res://art/Oden.png" id="1_qblg5"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dpfki"]
+atlas = ExtResource("1_qblg5")
+region = Rect2(0, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vd7kt"]
+atlas = ExtResource("1_qblg5")
+region = Rect2(16, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hr535"]
+atlas = ExtResource("1_qblg5")
+region = Rect2(16, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_85odc"]
+atlas = ExtResource("1_qblg5")
+region = Rect2(0, 0, 16, 32)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dpfki")
+}],
+"loop": true,
+"name": &"down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vd7kt")
+}],
+"loop": true,
+"name": &"left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hr535")
+}],
+"loop": true,
+"name": &"right",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_85odc")
+}],
+"loop": true,
+"name": &"up",
+"speed": 5.0
+}]

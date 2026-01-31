@@ -1,0 +1,18 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://dttihl7ookkir"]
+
+[ext_resource type="Texture2D" uid="uid://d2bncw8jheg3x" path="res://art/02_characters_Thrym.png" id="1_ekw7u"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vew5y"]
+atlas = ExtResource("1_ekw7u")
+region = Rect2(112, 48, 32, 64)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vew5y")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]

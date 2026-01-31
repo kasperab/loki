@@ -1,0 +1,54 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://duacjg5hami3x"]
+
+[ext_resource type="Texture2D" uid="uid://cjnwrdk1nemq8" path="res://art/Frejas_fagel.png" id="1_b2hfc"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bchuu"]
+atlas = ExtResource("1_b2hfc")
+region = Rect2(0, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ku6bu"]
+atlas = ExtResource("1_b2hfc")
+region = Rect2(16, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nbc4h"]
+atlas = ExtResource("1_b2hfc")
+region = Rect2(16, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0nnpk"]
+atlas = ExtResource("1_b2hfc")
+region = Rect2(0, 0, 16, 32)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bchuu")
+}],
+"loop": true,
+"name": &"down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ku6bu")
+}],
+"loop": true,
+"name": &"left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nbc4h")
+}],
+"loop": true,
+"name": &"right",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0nnpk")
+}],
+"loop": true,
+"name": &"up",
+"speed": 5.0
+}]
