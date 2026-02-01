@@ -1,6 +1,9 @@
 [gd_scene format=4 uid="uid://clo3owv7mgr0j"]
 
 [ext_resource type="TileSet" uid="uid://s7ymvq3t2umc" path="res://art/tilesheet.tres" id="1_g0r8s"]
+[ext_resource type="PackedScene" uid="uid://cvrt4mcs0otra" path="res://scenes/thrym.tscn" id="2_cmn0l"]
+[ext_resource type="PackedScene" uid="uid://doy80qamiw1ox" path="res://scenes/servant.tscn" id="3_movo8"]
+[ext_resource type="PackedScene" uid="uid://cxa3sqvykgcp8" path="res://scenes/player.tscn" id="4_lrkck"]
 
 [node name="Thrymscastle" type="Node2D" unique_id=674517666]
 
@@ -11,3 +14,58 @@ tile_set = ExtResource("1_g0r8s")
 [node name="TileMapLayer2" type="TileMapLayer" parent="." unique_id=17140427]
 tile_map_data = PackedByteArray("AAAOABAAAAAHAAcAAAAOAA8AAAAHAAcAAAAOAA4AAAAHAAcAAAARABAAAAAHAAcAAAARAA8AAAAHAAcAAAARAA4AAAAHAAcAAAAOAAEAAAAHAAcAAAAPAAEAAAAHAAcAAAAQAAEAAAAHAAcAAAARAAEAAAAHAAcAAAASAAEAAAAHAAcAAAATAAEAAAAHAAcAAAANAAEAAAAHAAcAAAAMAAEAAAAHAAcAAAAMAAIAAAAHAAcAAAAMAAMAAAAHAAcAAAATAAIAAAAHAAcAAAATAAMAAAAHAAcAAAATAAQAAAAHAAcAAAAMAAQAAAAHAAcAAAA=")
 tile_set = ExtResource("1_g0r8s")
+
+[node name="Thrym" parent="." unique_id=858870521 instance=ExtResource("2_cmn0l")]
+position = Vector2(258, 67)
+interact_distance = 32.0
+
+[node name="Servant" parent="." unique_id=1585064309 instance=ExtResource("3_movo8")]
+position = Vector2(199, 109)
+interact_distance = 32.0
+
+[node name="Servant2" parent="." unique_id=1622400482 instance=ExtResource("3_movo8")]
+position = Vector2(312, 110)
+interact_distance = 32.0
+
+[node name="Servant3" parent="." unique_id=64656708 instance=ExtResource("3_movo8")]
+position = Vector2(208, 205)
+interact_distance = 32.0
+
+[node name="Servant4" parent="." unique_id=719685919 instance=ExtResource("3_movo8")]
+position = Vector2(303, 204)
+interact_distance = 32.0
+
+[node name="Servant5" parent="." unique_id=691564469 instance=ExtResource("3_movo8")]
+position = Vector2(51, 48)
+interact_distance = 32.0
+
+[node name="Servant6" parent="." unique_id=1919231398 instance=ExtResource("3_movo8")]
+position = Vector2(83, 48)
+interact_distance = 32.0
+
+[node name="Servant7" parent="." unique_id=1715903961 instance=ExtResource("3_movo8")]
+position = Vector2(53, 88)
+interact_distance = 32.0
+
+[node name="Servant8" parent="." unique_id=174305375 instance=ExtResource("3_movo8")]
+position = Vector2(105, 210)
+interact_distance = 32.0
+
+[node name="Servant9" parent="." unique_id=1764359942 instance=ExtResource("3_movo8")]
+position = Vector2(78, 214)
+interact_distance = 32.0
+
+[node name="Servant10" parent="." unique_id=1447067280 instance=ExtResource("3_movo8")]
+position = Vector2(466, 62)
+interact_distance = 32.0
+
+[node name="Servant11" parent="." unique_id=96916941 instance=ExtResource("3_movo8")]
+position = Vector2(440, 67)
+interact_distance = 32.0
+
+[node name="Servant12" parent="." unique_id=6921244 instance=ExtResource("3_movo8")]
+position = Vector2(452, 217)
+interact_distance = 32.0
+
+[node name="Player" parent="." unique_id=155016044 instance=ExtResource("4_lrkck")]
+position = Vector2(257, 225)

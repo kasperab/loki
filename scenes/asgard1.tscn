@@ -1,7 +1,26 @@
 [gd_scene format=3 uid="uid://bxn4td0g3v3o5"]
 
 [ext_resource type="PackedScene" uid="uid://d3m2anyg2ljba" path="res://scenes/asgard.tscn" id="1_6ygsj"]
+[ext_resource type="PackedScene" uid="uid://cxa3sqvykgcp8" path="res://scenes/player.tscn" id="2_3c3o6"]
+[ext_resource type="PackedScene" uid="uid://toupoikpxnt1" path="res://scenes/thor1.tscn" id="3_e3k0o"]
+[ext_resource type="PackedScene" uid="uid://dvs4pda7v23wq" path="res://scenes/freya_bird.tscn" id="4_hji1t"]
+[ext_resource type="PackedScene" uid="uid://bmee776nd7b3g" path="res://scenes/heimdall1.tscn" id="5_ox00d"]
 
 [node name="Asgard1" type="Node2D" unique_id=696089052]
 
 [node name="Asgard" parent="." unique_id=642551723 instance=ExtResource("1_6ygsj")]
+
+[node name="Thor1" parent="." unique_id=1788709577 instance=ExtResource("3_e3k0o")]
+position = Vector2(-165, 79)
+interact_distance = 32.0
+
+[node name="FreyaBird" parent="." unique_id=1689748141 instance=ExtResource("4_hji1t")]
+position = Vector2(55, 50)
+interact_distance = 32.0
+
+[node name="Heimdall1" parent="." unique_id=1322154677 instance=ExtResource("5_ox00d")]
+position = Vector2(184, 61)
+interact_distance = 32.0
+
+[node name="Player" parent="." unique_id=155016044 instance=ExtResource("2_3c3o6")]
+position = Vector2(-227, 80)
