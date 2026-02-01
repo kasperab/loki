@@ -18,6 +18,9 @@ size = Vector2(16, 26)
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d2wvv"]
 bg_color = Color(0, 0, 0, 1)
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3v2ag"]
+bg_color = Color(0, 0, 0, 0.78431374)
+
 [node name="Player" type="CharacterBody2D" unique_id=155016044]
 motion_mode = 1
 script = ExtResource("1_g2els")
@@ -74,6 +77,7 @@ script = ExtResource("3_qhqgy")
 
 [node name="Label" type="Label" parent="MaskMenu" unique_id=539112249]
 layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_3v2ag")
 text = "Masks"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -159,6 +163,7 @@ offset_top = 64.0
 offset_right = 35.0
 offset_bottom = 87.0
 grow_horizontal = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_3v2ag")
 text = "Paused"
 horizontal_alignment = 1
 vertical_alignment = 1
