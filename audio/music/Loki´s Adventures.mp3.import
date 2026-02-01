@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dqus7eikhuwdo"
+path="res://.godot/imported/Loki´s Adventures.mp3-0aff223058b568e5f65295c7d164db4a.mp3str"
+
+[deps]
+
+source_file="res://audio/music/Loki´s Adventures.mp3"
+dest_files=["res://.godot/imported/Loki´s Adventures.mp3-0aff223058b568e5f65295c7d164db4a.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

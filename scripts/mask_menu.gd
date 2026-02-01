@@ -16,18 +16,22 @@ func _ready() -> void:
 func _on_humanoid_pressed() -> void:
 	set_form("human", loki_music)
 	close()
+	$"../UnequipMask".play()
 
 func _on_horse_pressed() -> void:
 	set_form("horse", horse_music)
 	close()
+	$"../EquipMask".play()
 
 func _on_bird_pressed() -> void:
 	set_form("bird", bird_music)
 	close()
+	$"../UnequipMask".play()
 
 func _on_jotun_pressed() -> void:
 	set_form("guard", guard_music)
 	close()
+	$"../UnequipMask".play()
 
 func set_form(form: String, music: AudioStreamPlayer) -> void:
 	player.form = form

@@ -10,6 +10,7 @@ config_version=5
 
 [application]
 
+config/name="Loki's Adventures"
 run/main_scene="uid://c160jyiuk5eea"
 config/features=PackedStringArray("4.6")
 
@@ -25,6 +26,7 @@ global="*uid://4sjo20r8s1a0"
 
 window/size/viewport_width=512
 window/size/viewport_height=288
+window/size/mode=3
 window/stretch/mode="canvas_items"
 window/stretch/scale_mode="integer"
 

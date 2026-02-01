@@ -1,7 +1,9 @@
 [gd_scene format=3 uid="uid://c160jyiuk5eea"]
 
 [ext_resource type="Script" uid="uid://c037afn28yb7u" path="res://scripts/menu.gd" id="1_yqeox"]
+[ext_resource type="Texture2D" uid="uid://dj0bqktxhcfyt" path="res://art/START_MENU.png" id="2_con2f"]
 [ext_resource type="PackedScene" uid="uid://ckeqfs4ao5qvd" path="res://scenes/settings.tscn" id="2_vjb58"]
+[ext_resource type="AudioStream" uid="uid://dqus7eikhuwdo" path="res://audio/music/Loki´s Adventures.mp3" id="4_mhnvy"]
 
 [node name="Menu" type="Control" unique_id=1751374174]
 layout_mode = 3
@@ -12,6 +14,12 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_yqeox")
 
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1552785852]
+layout_mode = 0
+offset_right = 512.0
+offset_bottom = 288.0
+texture = ExtResource("2_con2f")
+
 [node name="Start" type="Button" parent="." unique_id=393730424]
 layout_mode = 1
 anchors_preset = 8
@@ -19,13 +27,12 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -23.0
-offset_top = -80.0
-offset_right = 23.0
-offset_bottom = -49.0
+offset_left = -60.0
+offset_top = 16.0
+offset_right = 40.0
+offset_bottom = 56.0
 grow_horizontal = 2
 grow_vertical = 2
-text = "Start"
 
 [node name="Quit" type="Button" parent="." unique_id=295898965]
 layout_mode = 1
@@ -35,15 +42,22 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -23.0
-offset_top = -16.0
+offset_top = 64.0
 offset_right = 23.0
-offset_bottom = 15.0
+offset_bottom = 95.0
 grow_horizontal = 2
 grow_vertical = 2
 text = "Quit"
 
 [node name="Settings" parent="." unique_id=119162812 instance=ExtResource("2_vjb58")]
 layout_mode = 1
+offset_top = 80.0
+offset_bottom = 80.0
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=374764560]
+stream = ExtResource("4_mhnvy")
+autoplay = true
+bus = &"Music"
 
 [connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]

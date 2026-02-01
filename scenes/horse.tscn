@@ -2,7 +2,7 @@
 
 [ext_resource type="SpriteFrames" uid="uid://vwe1pr05t4b0" path="res://art/horse_sprite.tres" id="1_7j5lf"]
 [ext_resource type="Script" uid="uid://d03jolmq1svje" path="res://scripts/horse.gd" id="1_lpili"]
-[ext_resource type="Texture2D" uid="uid://ddfkmpbvbgbjo" path="res://art/01.png" id="3_42vyf"]
+[ext_resource type="AudioStream" uid="uid://b6yctsecgsckc" path="res://audio/sfx/Horse SFX.wav" id="3_42vyf"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lpili"]
 size = Vector2(32, 28)
@@ -18,8 +18,6 @@ position = Vector2(0, -2)
 sprite_frames = ExtResource("1_7j5lf")
 animation = &"left"
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=429983743]
-position = Vector2(0, -16)
-texture = ExtResource("3_42vyf")
-region_enabled = true
-region_rect = Rect2(144, 64, 16, 16)
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=219348530]
+stream = ExtResource("3_42vyf")
+bus = &"SFX"
