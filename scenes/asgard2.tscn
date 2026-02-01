@@ -1,6 +1,10 @@
-[gd_scene format=3 uid="uid://cgptkddyhbs7h"]
+[gd_scene format=3 uid="uid://buvdeffdrh8dv"]
 
 [ext_resource type="PackedScene" uid="uid://d3m2anyg2ljba" path="res://scenes/asgard.tscn" id="1_astfa"]
+[ext_resource type="PackedScene" uid="uid://msl4poebbpn6" path="res://scenes/freya2.tscn" id="2_fgxgi"]
+[ext_resource type="PackedScene" uid="uid://c7h608ptnbhqx" path="res://scenes/heimdall2.tscn" id="3_3xbkr"]
+[ext_resource type="PackedScene" uid="uid://mf1w187c3ocw" path="res://scenes/thor2.tscn" id="4_rxqpv"]
+[ext_resource type="PackedScene" uid="uid://cxa3sqvykgcp8" path="res://scenes/player.tscn" id="5_b02ah"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_astfa"]
 
@@ -13,3 +17,18 @@ position = Vector2(256, 88)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1377813067]
 shape = SubResource("RectangleShape2D_astfa")
+
+[node name="Freya2" parent="." unique_id=758420821 instance=ExtResource("2_fgxgi")]
+position = Vector2(53, 47)
+interact_distance = 32.0
+
+[node name="Heimdall2" parent="." unique_id=1322154677 instance=ExtResource("3_3xbkr")]
+position = Vector2(182, 54)
+interact_distance = 32.0
+
+[node name="Thor2" parent="." unique_id=1788709577 instance=ExtResource("4_rxqpv")]
+position = Vector2(-150, 81)
+interact_distance = 32.0
+
+[node name="Player" parent="." unique_id=155016044 instance=ExtResource("5_b02ah")]
+position = Vector2(230, 88)
