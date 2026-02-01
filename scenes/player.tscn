@@ -21,6 +21,7 @@ bg_color = Color(0, 0, 0, 1)
 [node name="Player" type="CharacterBody2D" unique_id=155016044]
 motion_mode = 1
 script = ExtResource("1_g2els")
+speed = 100.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=43766644]
 shape = SubResource("RectangleShape2D_u8vuu")

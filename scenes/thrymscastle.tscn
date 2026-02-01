@@ -1,9 +1,12 @@
-[gd_scene format=4 uid="uid://clo3owv7mgr0j"]
+[gd_scene format=4 uid="uid://dt6nn6odacgbj"]
 
 [ext_resource type="TileSet" uid="uid://s7ymvq3t2umc" path="res://art/tilesheet.tres" id="1_g0r8s"]
 [ext_resource type="PackedScene" uid="uid://cvrt4mcs0otra" path="res://scenes/thrym.tscn" id="2_cmn0l"]
 [ext_resource type="PackedScene" uid="uid://doy80qamiw1ox" path="res://scenes/servant.tscn" id="3_movo8"]
 [ext_resource type="PackedScene" uid="uid://cxa3sqvykgcp8" path="res://scenes/player.tscn" id="4_lrkck"]
+[ext_resource type="Script" uid="uid://cc05pw32bjaj0" path="res://scripts/exit3.gd" id="4_movo8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cmn0l"]
 
 [node name="Thrymscastle" type="Node2D" unique_id=674517666]
 
@@ -17,7 +20,7 @@ tile_set = ExtResource("1_g0r8s")
 
 [node name="Thrym" parent="." unique_id=858870521 instance=ExtResource("2_cmn0l")]
 position = Vector2(258, 67)
-interact_distance = 32.0
+interact_distance = 64.0
 
 [node name="Servant" parent="." unique_id=1585064309 instance=ExtResource("3_movo8")]
 position = Vector2(199, 109)
@@ -67,5 +70,14 @@ interact_distance = 32.0
 position = Vector2(452, 217)
 interact_distance = 32.0
 
+[node name="Exit" type="Area2D" parent="." unique_id=2113868847]
+position = Vector2(256, 280)
+script = ExtResource("4_movo8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Exit" unique_id=2146298605]
+shape = SubResource("RectangleShape2D_cmn0l")
+
 [node name="Player" parent="." unique_id=155016044 instance=ExtResource("4_lrkck")]
 position = Vector2(257, 225)
+
+[connection signal="body_entered" from="Exit" to="Exit" method="_on_body_entered"]

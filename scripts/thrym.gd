@@ -11,3 +11,4 @@ func _process(_delta: float) -> void:
 	if global.player.global_position.distance_to(global_position) < interact_distance:
 		if Input.is_action_just_pressed("talk"):
 			global.player.dialogue.start(dialogue)
+			global.talked_to_thrym = true

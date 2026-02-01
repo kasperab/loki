@@ -1,10 +1,14 @@
-[gd_scene format=3 uid="uid://bxn4td0g3v3o5"]
+[gd_scene format=3 uid="uid://pa7m50vum5ey"]
 
-[ext_resource type="PackedScene" uid="uid://d3m2anyg2ljba" path="res://scenes/asgard.tscn" id="1_6ygsj"]
+[ext_resource type="PackedScene" path="res://scenes/asgard.tscn" id="1_6ygsj"]
 [ext_resource type="PackedScene" uid="uid://cxa3sqvykgcp8" path="res://scenes/player.tscn" id="2_3c3o6"]
 [ext_resource type="PackedScene" uid="uid://toupoikpxnt1" path="res://scenes/thor1.tscn" id="3_e3k0o"]
 [ext_resource type="PackedScene" uid="uid://dvs4pda7v23wq" path="res://scenes/freya_bird.tscn" id="4_hji1t"]
+[ext_resource type="Script" uid="uid://bhpsni3qxac40" path="res://scripts/exit1.gd" id="5_e3k0o"]
 [ext_resource type="PackedScene" uid="uid://bmee776nd7b3g" path="res://scenes/heimdall1.tscn" id="5_ox00d"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3c3o6"]
+size = Vector2(20, 32)
 
 [node name="Asgard1" type="Node2D" unique_id=696089052]
 
@@ -22,5 +26,14 @@ interact_distance = 32.0
 position = Vector2(184, 61)
 interact_distance = 32.0
 
+[node name="Exit" type="Area2D" parent="." unique_id=1478693966]
+position = Vector2(256, 88)
+script = ExtResource("5_e3k0o")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Exit" unique_id=1451453533]
+shape = SubResource("RectangleShape2D_3c3o6")
+
 [node name="Player" parent="." unique_id=155016044 instance=ExtResource("2_3c3o6")]
 position = Vector2(-227, 80)
+
+[connection signal="body_entered" from="Exit" to="Exit" method="_on_body_entered"]

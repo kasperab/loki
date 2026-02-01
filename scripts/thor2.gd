@@ -17,5 +17,6 @@ func _process(_delta: float) -> void:
 		if Input.is_action_just_pressed("talk"):
 			if global.thor_after_heimdall:
 				global.player.dialogue.start(dialogue2)
+				global.player.dialogue.next_scene = "res://scenes/cutscene2.tscn"
 			else:
 				global.player.dialogue.start(dialogue1)

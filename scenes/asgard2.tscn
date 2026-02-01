@@ -1,7 +1,15 @@
-[gd_scene format=3 uid="uid://buvdeffdrh8dv"]
+[gd_scene format=3 uid="uid://cgptkddyhbs7h"]
 
 [ext_resource type="PackedScene" uid="uid://d3m2anyg2ljba" path="res://scenes/asgard.tscn" id="1_astfa"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_astfa"]
 
 [node name="Asgard2" type="Node2D" unique_id=1572441955]
 
 [node name="Asgard" parent="." unique_id=642551723 instance=ExtResource("1_astfa")]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=356015165]
+position = Vector2(256, 88)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1377813067]
+shape = SubResource("RectangleShape2D_astfa")

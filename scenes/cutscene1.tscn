@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://bjnjmrnglgyi5"]
+
+[ext_resource type="Script" uid="uid://ojb8j6bwfcj0" path="res://scripts/cutscene1.gd" id="1_aqdjm"]
+[ext_resource type="Texture2D" uid="uid://wys2ioqsj2oy" path="res://art/cutscene_1.png" id="1_veatj"]
+
+[node name="Cutscene1" type="Control" unique_id=1640162671]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_aqdjm")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1083354001]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_veatj")

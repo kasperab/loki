@@ -1,11 +1,31 @@
-[gd_scene format=3 uid="uid://injibnvafkvt"]
+[gd_scene format=3 uid="uid://dce8u6c1tgmc7"]
 
-[ext_resource type="PackedScene" uid="uid://ds4gvcdaugik3" path="res://scenes/road.tscn" id="1_b43cn"]
+[ext_resource type="PackedScene" path="res://scenes/road.tscn" id="1_b43cn"]
 [ext_resource type="PackedScene" uid="uid://cxa3sqvykgcp8" path="res://scenes/player.tscn" id="2_8f23h"]
+[ext_resource type="Script" uid="uid://ce884ee8my13v" path="res://scripts/exit2.gd" id="2_n1svd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8f23h"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b43cn"]
 
 [node name="Road1" type="Node2D" unique_id=580523758]
 
 [node name="Road" parent="." unique_id=1045175530 instance=ExtResource("1_b43cn")]
 
+[node name="EntranceBlock" type="StaticBody2D" parent="." unique_id=1848101414]
+position = Vector2(-672, -72)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EntranceBlock" unique_id=473146409]
+shape = SubResource("RectangleShape2D_8f23h")
+
+[node name="Exit" type="Area2D" parent="." unique_id=110047118]
+position = Vector2(756, -264)
+script = ExtResource("2_n1svd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Exit" unique_id=1700762132]
+shape = SubResource("RectangleShape2D_b43cn")
+
 [node name="Player" parent="." unique_id=155016044 instance=ExtResource("2_8f23h")]
 position = Vector2(-638, -74)
+
+[connection signal="body_entered" from="Exit" to="Exit" method="_on_body_entered"]
