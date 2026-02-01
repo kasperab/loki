@@ -1,7 +1,11 @@
 [gd_scene format=3 uid="uid://dv4vdxoyqvjd4"]
 
 [ext_resource type="Script" uid="uid://b2thmvblrbfvo" path="res://scripts/cutscene2.gd" id="1_af4c7"]
-[ext_resource type="Texture2D" uid="uid://bv6biucm1o3h1" path="res://art/cutscene_2.png" id="2_6neoj"]
+[ext_resource type="Texture2D" uid="uid://cxlpd66pie5v7" path="res://art/Bild_2-1_Thor_vid_matbordet.png" id="2_6neoj"]
+[ext_resource type="Texture2D" uid="uid://vjrngnbo4evj" path="res://art/cutscene_2_version_01.png" id="3_veqdg"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6neoj"]
+bg_color = Color(0, 0, 0, 0.78431374)
 
 [node name="Cutscene2" type="Control" unique_id=1631603116]
 layout_mode = 3
@@ -12,8 +16,42 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_af4c7")
 
-[node name="TextureRect" type="TextureRect" parent="." unique_id=720566010]
+[node name="Eat" type="TextureRect" parent="." unique_id=720566010]
+visible = false
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 texture = ExtResource("2_6neoj")
+
+[node name="Fight" type="TextureRect" parent="." unique_id=517534241]
+visible = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("3_veqdg")
+
+[node name="Empty" type="TextureRect" parent="." unique_id=1603491152]
+visible = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Dialogue" type="Panel" parent="." unique_id=246804581]
+layout_mode = 0
+offset_top = 224.0
+offset_right = 512.0
+offset_bottom = 288.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_6neoj")
+
+[node name="Label" type="Label" parent="Dialogue" unique_id=1577591749]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 16.0
+offset_top = 8.0
+offset_right = -16.0
+offset_bottom = -8.0
+grow_horizontal = 2
+grow_vertical = 2
+autowrap_mode = 2

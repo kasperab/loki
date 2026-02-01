@@ -3,7 +3,7 @@ extends StaticBody2D
 @export var interact_distance: float
 @onready var mask_sprite = $Sprite2D
 var end_dialogue = [
-	"Svadilfari: Well, hello there. How are you doing? <3 <3 <3"
+	"Svadilfari: \"Well, hello there. How are you doing? <3 <3 <3\""
 ]
 var horse_dialogue = [
 	"You already have a horse shape."

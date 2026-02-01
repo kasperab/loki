@@ -2,7 +2,7 @@ extends StaticBody2D
 
 @export var interact_distance: float
 var dialogue = [
-	"Thor: Loki! My hammer has been stolen! We have to find it! Perhaps Freya will know what to do?"
+	"Thor: \"Loki! My hammer has been stolen! We have to find it! Perhaps Freya will know what to do?\""
 ]
 
 func _process(_delta: float) -> void:

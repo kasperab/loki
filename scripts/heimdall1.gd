@@ -2,8 +2,8 @@ extends StaticBody2D
 
 @export var interact_distance: float
 var dialogue = [
-	"Heimdall: Hm, I think I saw some jotuns heading towards Thrym’s domain.",
-	"Heimdall: But you should be careful. There are many dangers between here and there."
+	"Heimdall: \"Hm, I think I saw some jotuns heading towards Thrym’s domain.\"",
+	"Heimdall: \"But you should be careful. There are many dangers between here and there.\""
 ]
 
 func _process(_delta: float) -> void:

@@ -2,13 +2,13 @@ extends StaticBody2D
 
 @export var interact_distance: float
 var start_dialogue = [
-	"Odin: There you are, Loki! The builder you hired is almost done!",
-	"Odin: And as you recall, you were the one who offered him Freya's hand in marriage if he would finish within one winter.",
-	"Odin: That horse of his is supernaturally fast. You caused this mess. Now fix this!",
-	"Odin: Perhaps you can do something if you copy some shapes? Press C next to someone to copy their shape."
+	"Odin: \"There you are, Loki! The builder you hired is almost done!\"",
+	"Odin: \"And as you recall, you were the one who offered him Freya's hand in marriage if he would finish within one winter.\"",
+	"Odin: \"That horse of his is supernaturally fast. You caused this mess. Now fix this!\"",
+	"Odin: \"Perhaps you can do something if you copy some shapes? Press C next to someone to copy their shape.\""
 ]
 var horse_dialogue = [
-	"Odin: That should work great! Press X to change shape and go distract that horse!"
+	"Odin: \"That should work great! Press X to change shape and go distract that horse!\""
 ]
 var human_dialogue = [
 	"You already have a humanoid shape."

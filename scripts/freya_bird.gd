@@ -2,9 +2,9 @@ extends StaticBody2D
 
 @export var interact_distance: float
 var dialogue = [
-	"Freya: Hi, Loki! Look! I’m a bird now!",
-	"Freya: What? Thor’s hammer has been stolen? Oh no!",
-	"Freya: How about you copy my bird-shape. Then you can fly to Jotunheim and see if you can find any clues?"
+	"Freya: \"Hi, Loki! Look! I’m a bird now!\"",
+	"Freya: \"What? Thor’s hammer has been stolen? Oh no!\"",
+	"Freya: \"How about you copy my bird-shape. Then you can fly to Jotunheim and see if you can find any clues?\""
 ]
 var mask_dialogue = [
 	"You already have a bird shape."

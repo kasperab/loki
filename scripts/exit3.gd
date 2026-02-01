@@ -5,4 +5,4 @@ func _on_body_entered(_body: Node2D) -> void:
 		get_tree().change_scene_to_file("res://scenes/road2.tscn")
 	else:
 		global.player.global_position.y -= 16
-		global.player.dialogue.start(["Loki: I have to find where the hammer is."], true)
+		global.player.dialogue.start(["Loki: \"I have to find where the hammer is.\""], true)

@@ -2,7 +2,7 @@ extends StaticBody2D
 
 @export var interact_distance: float
 var dialogue = [
-	"Builder: Oh! This is going great! I'll get to marry Freya for sure!"
+	'Builder: "Oh! This is going great! I\'ll get to marry Freya for sure!'
 ]
 var human_dialogue = [
 	"You already have a humanoid shape."

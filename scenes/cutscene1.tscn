@@ -2,6 +2,11 @@
 
 [ext_resource type="Script" uid="uid://ojb8j6bwfcj0" path="res://scripts/cutscene1.gd" id="1_aqdjm"]
 [ext_resource type="Texture2D" uid="uid://wys2ioqsj2oy" path="res://art/cutscene_1.png" id="1_veatj"]
+[ext_resource type="Texture2D" uid="uid://bv6biucm1o3h1" path="res://art/cutscene_2.png" id="3_isedj"]
+[ext_resource type="Texture2D" uid="uid://ch30mwax1qycg" path="res://art/cutscene_4_loki_returns.png" id="4_1fxw1"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_700ic"]
+bg_color = Color(0, 0, 0, 0.78431374)
 
 [node name="Cutscene1" type="Control" unique_id=1640162671]
 layout_mode = 3
@@ -12,8 +17,49 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_aqdjm")
 
-[node name="TextureRect" type="TextureRect" parent="." unique_id=1083354001]
+[node name="Chase" type="TextureRect" parent="." unique_id=1083354001]
+visible = false
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 texture = ExtResource("1_veatj")
+
+[node name="Fight" type="TextureRect" parent="." unique_id=554801510]
+visible = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("3_isedj")
+
+[node name="Return" type="TextureRect" parent="." unique_id=717915067]
+visible = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("4_1fxw1")
+
+[node name="Empty" type="TextureRect" parent="." unique_id=51084363]
+visible = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Dialogue" type="Panel" parent="." unique_id=501153244]
+layout_mode = 0
+offset_top = 224.0
+offset_right = 512.0
+offset_bottom = 288.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_700ic")
+
+[node name="Label" type="Label" parent="Dialogue" unique_id=1908915316]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 16.0
+offset_top = 8.0
+offset_right = -16.0
+offset_bottom = -8.0
+grow_horizontal = 2
+grow_vertical = 2
+autowrap_mode = 2

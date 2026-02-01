@@ -2,8 +2,8 @@ extends StaticBody2D
 
 @export var interact_distance: float
 var dialogue = [
-	"Freya: He wants what??!! Absolutely not! I will not marry some jotun just so Thor can get his hammer back!",
-	"Freya: You will have to find some other solution."
+	"Freya: \"He wants what??!! Absolutely not! I will not marry some jotun just so Thor can get his hammer back!\"",
+	"Freya: \"You will have to find some other solution.\""
 ]
 
 func _process(_delta: float) -> void:
