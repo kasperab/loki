@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://c037afn28yb7u" path="res://scripts/menu.gd" id="1_yqeox"]
 [ext_resource type="Texture2D" uid="uid://dj0bqktxhcfyt" path="res://art/START_MENU.png" id="2_con2f"]
 [ext_resource type="PackedScene" uid="uid://ckeqfs4ao5qvd" path="res://scenes/settings.tscn" id="2_vjb58"]
+[ext_resource type="AudioStream" uid="uid://dqus7eikhuwdo" path="res://audio/music/Loki´s Adventures.mp3" id="4_mhnvy"]
 
 [node name="Menu" type="Control" unique_id=1751374174]
 layout_mode = 3
@@ -52,6 +53,11 @@ text = "Quit"
 layout_mode = 1
 offset_top = 80.0
 offset_bottom = 80.0
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=374764560]
+stream = ExtResource("4_mhnvy")
+autoplay = true
+bus = &"Music"
 
 [connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
