@@ -36,3 +36,24 @@ position = Vector2(483, 2)
 
 [node name="Guard8" parent="." unique_id=1954008667 instance=ExtResource("2_my2y2")]
 position = Vector2(572, 28)
+
+[node name="Guard9" parent="." unique_id=1265750602 instance=ExtResource("2_my2y2")]
+position = Vector2(-96, -124)
+
+[node name="Guard10" parent="." unique_id=1869492832 instance=ExtResource("2_my2y2")]
+position = Vector2(225, -115)
+
+[node name="Guard11" parent="." unique_id=771903640 instance=ExtResource("2_my2y2")]
+position = Vector2(-340, 32)
+
+[node name="Guard12" parent="." unique_id=835118535 instance=ExtResource("2_my2y2")]
+position = Vector2(455, -200)
+
+[node name="Guard13" parent="." unique_id=1174910541 instance=ExtResource("2_my2y2")]
+position = Vector2(694, -110)
+
+[node name="Guard14" parent="." unique_id=1189001353 instance=ExtResource("2_my2y2")]
+position = Vector2(306, -236)
+
+[node name="Guard15" parent="." unique_id=832885655 instance=ExtResource("2_my2y2")]
+position = Vector2(131, -71)
