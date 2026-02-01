@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cvyx24w4e3ep4"
+path="res://.godot/imported/Bygger mur (Slår mot sten).wav-1cca9d997155239f3392f4e19080d232.sample"
+
+[deps]
+
+source_file="res://audio/sfx/Bygger mur (Slår mot sten).wav"
+dest_files=["res://.godot/imported/Bygger mur (Slår mot sten).wav-1cca9d997155239f3392f4e19080d232.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

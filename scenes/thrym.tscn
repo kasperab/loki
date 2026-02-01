@@ -2,6 +2,7 @@
 
 [ext_resource type="SpriteFrames" uid="uid://dttihl7ookkir" path="res://art/thrym_sprite.tres" id="1_5ju3k"]
 [ext_resource type="Script" uid="uid://d0nsuc33u2amr" path="res://scripts/thrym.gd" id="1_w0w60"]
+[ext_resource type="AudioStream" uid="uid://cnu3jir1vgjmb" path="res://audio/sfx/Dörren SFX.wav" id="3_owi0g"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_w0w60"]
 size = Vector2(32, 48)
@@ -15,3 +16,8 @@ shape = SubResource("RectangleShape2D_w0w60")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=19149390]
 position = Vector2(0, -8)
 sprite_frames = ExtResource("1_5ju3k")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1675871950]
+stream = ExtResource("3_owi0g")
+autoplay = true
+bus = &"SFX"

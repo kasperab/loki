@@ -2,6 +2,7 @@
 
 [ext_resource type="SpriteFrames" uid="uid://bdwo58qrstce4" path="res://art/builder_sprite.tres" id="1_80mxy"]
 [ext_resource type="Script" uid="uid://cvhbqnsb0c6pf" path="res://scripts/builder.gd" id="1_glllh"]
+[ext_resource type="AudioStream" uid="uid://cvyx24w4e3ep4" path="res://audio/sfx/Bygger mur (Slår mot sten).wav" id="3_rcluh"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pewu3"]
 size = Vector2(16, 32)
@@ -15,3 +16,7 @@ shape = SubResource("RectangleShape2D_pewu3")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1491327089]
 sprite_frames = ExtResource("1_80mxy")
 animation = &"down"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=237016262]
+stream = ExtResource("3_rcluh")
+bus = &"SFX"

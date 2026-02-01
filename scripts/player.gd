@@ -34,6 +34,7 @@ func _process(delta: float) -> void:
 		mask_menu.show()
 		first_mask.grab_focus()
 		get_tree().paused = true
+		$OpenMaskMenu.play()
 	if Input.is_action_pressed("up"):
 		velocity.y -= 1
 	if Input.is_action_pressed("down"):
@@ -60,3 +61,4 @@ func _process(delta: float) -> void:
 
 func update_masks() -> void:
 	mask_menu._ready()
+	$GetMask.play()
