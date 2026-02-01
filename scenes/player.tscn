@@ -168,12 +168,24 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -35.0
+offset_left = -23.0
 offset_top = 128.0
-offset_right = 35.0
-offset_bottom = 159.0
+offset_right = 23.0
+offset_bottom = 148.0
 grow_horizontal = 2
 text = "Resume"
+
+[node name="Quit" type="Button" parent="Pause" unique_id=450893778]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -35.0
+offset_top = 160.0
+offset_right = 33.0
+offset_bottom = 180.0
+grow_horizontal = 2
+text = "Quit to menu"
 
 [node name="Settings" parent="Pause" unique_id=119162812 instance=ExtResource("6_tuyoq")]
 layout_mode = 1
@@ -185,3 +197,4 @@ offset_bottom = 32.0
 [connection signal="pressed" from="MaskMenu/GridContainer/Bird" to="MaskMenu" method="_on_bird_pressed"]
 [connection signal="pressed" from="MaskMenu/GridContainer/Jotun" to="MaskMenu" method="_on_jotun_pressed"]
 [connection signal="pressed" from="Pause/Resume" to="Pause" method="_on_resume_pressed"]
+[connection signal="pressed" from="Pause/Quit" to="Pause" method="_on_quit_pressed"]

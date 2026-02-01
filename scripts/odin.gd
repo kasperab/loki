@@ -8,7 +8,7 @@ var start_dialogue = [
 	"Odin: Perhaps you can do something if you copy some shapes? Press C next to someone to copy their shape."
 ]
 var horse_dialogue = [
-	"Odin: That should work great! Now go distract that horse!"
+	"Odin: That should work great! Press X to change shape and go distract that horse!"
 ]
 var human_dialogue = [
 	"You already have a humanoid shape."

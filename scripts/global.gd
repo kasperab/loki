@@ -7,6 +7,7 @@ var player: Player
 var thor_after_heimdall = false
 var heimdall_after_freya = false
 var talked_to_thrym = false
+var new_game = true
 
 func reset() -> void:
 	has_horse = false
@@ -15,3 +16,4 @@ func reset() -> void:
 	thor_after_heimdall = false
 	heimdall_after_freya = false
 	talked_to_thrym = false
+	new_game = true

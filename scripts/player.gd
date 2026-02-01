@@ -11,15 +11,22 @@ var form = "human"
 var step_countdown = 0.0
 @onready var footstep = $Footstep
 @onready var dialogue: Dialogue = $Dialogue
+var talk_intro = [
+	"Press Z to talk and advance dialogue."
+]
 
 func _ready() -> void:
 	global.player = self
+	if global.new_game:
+		global.new_game = false
+		dialogue.start(talk_intro, true)
 
 func _process(delta: float) -> void:
 	velocity.x = 0
 	velocity.y = 0
 	if Input.is_action_just_pressed("pause"):
 		pause.show()
+		pause.focus()
 		get_tree().paused = true
 	if dialogue.visible:
 		return
