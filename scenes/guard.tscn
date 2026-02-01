@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://bcfm3pjfudepo"]
+
+[ext_resource type="Script" uid="uid://dq4ey2m3vam0d" path="res://scripts/guard.gd" id="1_ci2qi"]
+[ext_resource type="SpriteFrames" uid="uid://b25vokdb3d22k" path="res://art/guard_sprite.tres" id="1_m4fl1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ci2qi"]
+size = Vector2(16, 28)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m4fl1"]
+size = Vector2(20, 32)
+
+[node name="Guard" type="CharacterBody2D" unique_id=376451936]
+script = ExtResource("1_ci2qi")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1181936864]
+shape = SubResource("RectangleShape2D_ci2qi")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=241788738]
+position = Vector2(0, -2)
+sprite_frames = ExtResource("1_m4fl1")
+animation = &"down"
+
+[node name="Area2D" type="Area2D" parent="." unique_id=516901952]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=992098155]
+shape = SubResource("RectangleShape2D_m4fl1")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
